@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+
+\title{Hill Climbing and Simulated Annealing}
+\author{Alex McCaslin}
+\date{March 18 2016}
+
+
+\begin{document}
+	\maketitle
+	
+	Between hill climbing, hill climbing with random restarts, and simulated annealing, it's very easy to see that simulated annealing was the best of the three. The reason for simulated annealing being the best is that hillclimbing will only go down the steepest hill. It is possible that the steepest hill is a very short slope, and the less steep hill goes on for a longer amount of time, but hill climbing will never account for that. Using random restarts allows for you to find a better path because you are able to restart in random positions throughout the graph, so at least you'll find multiple minimums. Simulated annealing is randomized within each search allowing it to look in multiple directions continuously hunting towards a downward direction making it the best of the three searches. 
+
+
+	Because simulated annealing has so much randomness it is possible for it to be the longest search, but depending on the number of random restarts in hill climbing, you may have a longer time spent doing each of the restarts. But relative to each search simulated annealing takes the longest because of the multiple different paths it can take and the possibility for bad moves.
+	
+	\begin{figure}
+		\makebox[\textwidth][c]{\includegraphics[width=1.8\textwidth]{figure_1}}%	
+		\caption{Hill-Climbing}
+	\end{figure}
+	
+	\begin{figure}  
+		\makebox[\textwidth][c]{\includegraphics[width=1.8\textwidth]{figure_2}}%	
+		\caption{Hill-Climbing With Restarts}
+	\end{figure}
+
+	\begin{figure}
+		\makebox[\textwidth][c]{\includegraphics[width=1.8\textwidth]{figure_3}}%	
+		\caption{Simulated Annealing}
+	\end{figure}	
+
+\end{document}
